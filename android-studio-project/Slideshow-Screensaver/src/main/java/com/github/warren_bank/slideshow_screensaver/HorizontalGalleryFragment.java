@@ -166,7 +166,7 @@ public class HorizontalGalleryFragment extends Fragment implements Loader.OnLoad
 
         if (next != current_image_index) {
           current_image_index = next;
-          recyclerView.scrollToPosition(current_image_index);
+          recyclerView.smoothScrollToPosition(current_image_index);
         }
 
         handler.postDelayed(this, duration);
